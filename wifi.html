@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>ESP8266 Wifi Configuration</title>
+		<style type="text/css">
+			.login-page {
+			  width: 360px;
+			  padding: 8% 0 0;
+			  margin: auto;
+			}
+			form{
+				margin: 0;
+			}
+			h1{
+				color: #4CAF50;
+				font-size: 22px;
+				font-weight: normal;
+				margin: 0;
+			}
+			.title{
+				margin-bottom: 25px;
+			}
+			.form {
+			  position: relative;
+			  z-index: 1;
+			  background: #FFFFFF;
+			  max-width: 360px;
+			  margin: 0 auto 100px;
+			  padding: 30px 45px;
+			  text-align: center;
+			  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+			}
+			.form input, select{
+			  outline: 0;
+			  background: #f2f2f2;
+			  width: 100%;
+			  border: 0;
+			  margin: 0 0 15px;
+			  padding: 15px;
+			  box-sizing: border-box;
+			  font-size: 14px;
+			}
+			.form input[type=submit] {
+			  outline: 0;
+			  background: #4CAF50;
+			  width: 100%;
+			  border: 0;
+			  padding: 15px;
+			  color: #FFFFFF;
+			  font-size: 14px;
+			}
+			.form input[type=submit]:hover, .form input[type=submit]:focus {
+			  background: #43A047;
+			}
+			.form .message {
+			  margin: 15px 0 0;
+			  color: #b3b3b3;
+			  font-size: 12px;
+			}
+			.form .message a {
+			  color: #4CAF50;
+			  text-decoration: none;
+			}
+			body {
+			  background: linear-gradient(to left, #76b852, #8DC26F);
+			  font-family: sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="login-page">
+			<div class="form">				
+				<div class="title">
+					<h1>Connect to WiFi</h1>
+					<p class="message">See more details on the project's <a href="#">Github</a></p>
+				</div>
+				<form class="login-form" method="GET">
+					<select name="wifi" required="required">
+						<option selected disabled value="">Select a WiFi</option>
+						<option>Moyal</option>
+					</select>
+					<input type="password" name="password" placeholder="password" required="required" />
+					<input type="submit" value="LOGIN" />
+					<p class="message">See more details on the project's <a href="#">Github</a></p>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
